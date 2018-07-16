@@ -14,4 +14,4 @@
 * Fix sebesség.
 * Game Over, ha a játék teljesen kitölti a játékteret.ű
 * A játéktér induló mérete. 50 * 50 négyzet.
-* Új játék gomb, ami Start is. 
+* Új játék gomb, ami Start is.
