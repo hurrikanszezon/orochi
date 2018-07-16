@@ -1,0 +1,26 @@
+.main {
+    max-width: 960px;
+}
+
+.playground {
+    width: 90%;
+    height: 500px;
+}
+
+.tile {
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+.voidTile {
+    background-color: #afaae7; 
+}
+
+.foodTile {
+    background-color: #dc2f4c;
+}
+
+.snakeTile {
+    background-color: #0e9c1f;
+}
