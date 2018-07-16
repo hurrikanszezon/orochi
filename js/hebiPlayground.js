@@ -10,9 +10,10 @@ class Playground {
     };
 
     this.generate();
-    this.snake = new Snake(5, this.tiles);
+    this.snake = new Snake(5, this.tiles, this);
     this.generateFood();
   }
+
   generate() {
     var tileWidth = 100 / this.width;
     for (var b = 0; b < (this.width * this.width); b++) {
