@@ -5,6 +5,8 @@ class Snake {
     this.parent = parent;
     this.body = [];
     this.start = [];
+    this.speed = 0;
+    this.incrementSpeed = 0;
     this.direction = 1;
     this.pos = 0;
     this.generateSnake();
@@ -13,7 +15,7 @@ class Snake {
   }
   startWatch() {
     var self = this;
-    setInterval(function () {
+    setInterval(() => {
       self.move();
     }, 42);
   }
@@ -35,6 +37,8 @@ class Snake {
     if (this.tiles[this.body[0]].type !== 'foodTile') {
       this.tiles[this.body.pop()].setEmpty();
     } else {
+      // this.speed -= this.incrementSpeed;
+      // this.startWatch();
       this.parent.generateFood();
     }
 
@@ -53,7 +57,7 @@ class Snake {
 
   watchKeys() {
     var self = this;
-    document.body.addEventListener('keydown', function (event) {
+    document.body.addEventListener('keydown', event => {
       event.preventDefault();
   	if (event.keyCode === 37 && self.direction !== 1) {
         self.direction = 3;
